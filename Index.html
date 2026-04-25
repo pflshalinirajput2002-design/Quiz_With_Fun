@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App JSON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+             background-color: #f8f9fa;
+        }
+       
+        .navbar, footer {
+            background: linear-gradient(90deg, #6a11cb, #2575fc) !important;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .option {
+            cursor: pointer;
+        }
+
+            .option:hover {
+                background-color: #e9ecef;
+            }
+
+        #mainContainer {
+            flex: 1;
+            background: linear-gradient(135deg, #f5f7ff, #eef2ff);
+            margin-top: 20px;
+            margin-bottom: 50px;
+            padding: 30px 65px 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+            #mainContainer .card {
+                background: rgba(255, 255, 255, 0.9);
+                backdrop-filter: blur(10px);
+                border-radius: 14px;
+                box-shadow: 0 8px 20px rgba(106, 17, 203, 0.12);
+                padding: 20px;
+                text-align: center;
+                margin: 10px 0;
+                min-height: 220px;
+                border: 1px solid rgba(106, 17, 203, 0.12);
+                transition: 0.3s ease;
+            }
+
+                #mainContainer .card:hover {
+                    transform: translateY(-6px);
+                    box-shadow: 0 12px 28px rgba(37, 117, 252, 0.2);
+                }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card h5 {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        h2 {
+            padding-bottom: 15px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .quiz-box {
+            transition: 0.3s;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            font-size: 18px;
+        }
+
+            .quiz-box:hover {
+                transform: translateY(-5px);
+            }
+
+        .quiz-modal {
+            border-radius: 18px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+       .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding:10px;
+            border-radius:10px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            border-bottom: none;
+        }
+
+            .quiz-header .btn-close {
+                filter: invert(1);
+            }
+
+        .quiz-body {
+            background: #f8f9ff;
+            padding: 25px;
+        }
+
+       
+        .result-box {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .quiz-footer {
+            background: #f1f3ff;
+            border-top: none;
+        }
+
+        /* Buttons hover effect */
+        #submit {
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+            #submit:hover {
+                transform: scale(1.05);
+                background: #198754;
+            }
+
+       
+
+        .q-text {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .q-count {
+            background: #C8C8C8;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+   @media (max-width: 768px) {
+    #mainContainer .card {
+        margin-bottom: 20px !important;
+    }
+
+    #mainContainer .col-md-3,
+    #mainContainer .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+        .quiz-btn {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid white;
+            font-weight: 800; 
+            border-radius: 20px;
+            padding: 6px 16px;
+            transition: 0.3s;
+        }
+
+            .quiz-btn:hover {
+                background: white;
+                color: #6a11cb;
+                transform: scale(1.05);
+            }
+            .quiz-btn.starting {
+                transform: scale(0.9);
+                opacity: 0.7;
+                box-shadow: 0 0 20px rgba(255,255,255,0.6);
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark quiz-navbar">
+        <div class="container-fluid">
+            <img src="LearningImages/quizlogo.png" alt="logo" style="height:50px;width:50px;border-radius:50%;" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.w3schools.com/cs/" target="_blank">C#</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://learn.microsoft.com/en-us/dotnet/" target="_blank">Dot Net</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.w3schools.com/sql/" target="_blank">SQL</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.w3schools.com/js/" target="_blank">JavaScript</a>
+                    </li>
+                </ul>
+                <span id="startQuizBtn" style="cursor:pointer; color:white; font-weight:600;">
+                    View Instructions 📌
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="mainContainer">
+        <div class="row">
+            <h1 style="text-align:center;">Quiz Hub</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="icon">♟️</div>
+                    <h5>Fun & Engaging</h5>
+                    <p>Enjoy an interactive way of learning with real-time feedback.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="icon">🎬</div>
+                    <h5>Multiple Topics</h5>
+                    <p>Choose from HTML, Java Script, Jquery, C# with Oops, SQL,ReactJs and more!</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="icon">📚</div>
+                    <h5>Leaderboard & Rewards</h5>
+                    <p>Earn badges and rank high by scoring the best!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>🔥 Popular Quiz Categories</h2>
+            <div class="col-md-3">
+                <div class="card quiz-box text-center w-100 h-100" data-file="LearningImages/htmlquestions.json">
+                    <div class="d-flex justify-content-center">
+                        <img src="LearningImages/html.jpg" alt="HTML" style="width:50px; height:50px; object-fit:cover; border-radius:10px;">
+                    </div>
+                    <h5>HTML [Hyper Text Markup Language]</h5>
+                    <p>Learn the basics of web structure using HTML, including elements, tags, and page layout.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card quiz-box text-center w-100 h-100" data-file="LearningImages/Jsquestions.json">
+                    <div class="d-flex justify-content-center">
+                        <img src="LearningImages/jslogo.jpg" alt="JavaScript" style="width:50px; height:50px; object-fit:cover; border-radius:10px;">
+                    </div>
+                    <h5>Java Script</h5>
+                    <p>Learn the fundamentals of JavaScript, including variables, functions, events, and how to make web pages interactive.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card quiz-box text-center w-100 h-100" data-file="LearningImages/Jquery.json">
+                    <div class="d-flex justify-content-center">
+                        <img src="LearningImages/jqery.jpg" alt="jQuery" style="width:50px; height:50px; object-fit:cover; border-radius:10px;">
+                    </div>
+                    <h5>Jquery</h5>
+                    <p>Understand how to use jQuery to simplify DOM manipulation, handle events, create animations, and work with AJAX.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card quiz-box text-center w-100 h-100" data-file="LearningImages/Oopsquestion.json">
+                    <div class="d-flex justify-content-center">
+                        <img src="LearningImages/oops.jpg" alt="C#OOP" style="width:50px; height:50px; object-fit:cover; border-radius:10px;">
+                    </div>
+                    <h5>C# [OOP's]</h5>
+                    <p>Learn object-oriented programming concepts in C#, including classes, objects, inheritance, encapsulation, and polymorphism.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:20px;padding-top:15px;">
+            <div class="col-md-3">
+                <div class="card quiz-box text-center w-100 h-100" data-file="LearningImages/ReactJsquestion.json">
+                    <div class="d-flex justify-content-center">
+                        <img src="LearningImages/reactjs.jpg" alt="React JS" class="mb-2" style="width:50px; height:50px; object-fit:cover; border-radius:10px;">
+                    </div>
+                    <h5>React Js</h5>
+                    <p>Learn how to build modern user interfaces using React, including components, props, state, and single-page applications.</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card quiz-box text-center w-100 h-100" data-file="LearningImages/Csharpquestion.json">
+                    <div class="d-flex justify-content-center">
+                        <img src="LearningImages/cSharp.jpg" alt="C#" class="mb-2" style="width:50px; height:50px; object-fit:cover; border-radius:10px;">
+                    </div>
+                    <h5>C#</h5>
+                    <p>Learn the basics of C# programming, including syntax, data types, control statements, and building simple applications.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card quiz-box text-center w-100 h-100" data-file="LearningImages/Sqlquestion.json">
+                    <div class="d-flex justify-content-center">
+                        <img src="LearningImages/sql.jpg" alt="SQL" class="mb-2" style="width:50px; height:50px; object-fit:cover; border-radius:10px;">
+                    </div>
+                    <h5>Structured Query Language</h5>
+                    <p>Understand how to manage and query databases using SQL, including SELECT, INSERT, UPDATE, DELETE, and joins.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card quiz-box text-center w-100 h-100" data-file="LearningImages/Bootstrapquestion.json">
+                    <div class="d-flex justify-content-center">
+                        <img src="LearningImages/bootstrap.jpg" alt="Bootstrap" class="mb-2" style="width:50px; height:50px; object-fit:cover; border-radius:10px;">
+                    </div>
+                    <h5>Bootstrap 5</h5>
+                    <p>Learn how to design responsive and mobile-first websites using Bootstrap 5 with grids, components, and utility classes.</p>
+                </div>
+            </div>
+        </div>
+        <!-- QUIZ MODAL -->
+        <div class="modal fade" id="quizModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content quiz-modal">
+                    <div class="modal-header quiz-header">
+                        <h5 class="modal-title">🧠 Quiz Challenge</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body quiz-body">
+                        <div id="quiz" class="quiz-box">Loading questions...</div>
+                        <div id="result" class="result-box mt-3"></div>
+                    </div>
+                    <div class="modal-footer quiz-footer">
+                        <button id="submit" class="btn btn-success px-4">Submit Answer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        @copyright.com
+    </footer>
+    <script>
+        const quiz = document.getElementById('quiz');
+        const submitBtn = document.getElementById('submit');
+        const resultDiv = document.getElementById('result');
+
+        let quizData = [];
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+
+        // ==========================  LOAD QUIZ
+        function loadQuiz(filePath) {
+            console.log("Loading file:", filePath);
+            if (!filePath) {
+                quiz.innerHTML = "Invalid quiz file!";
+                return;
+            }
+
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) throw new Error('HTTP Error: ' + response.status);
+                    return response.json();
+                })
+                .then(data => {
+
+                    if (!Array.isArray(data)) {
+                        throw new Error("Invalid JSON format");
+                    }
+
+                    quizData = data;
+                    currentQuestion = 0;
+                    score = 0;
+                    answered = false;
+
+                    resultDiv.innerHTML = '';
+                    submitBtn.style.display = 'inline-block';
+                    submitBtn.disabled = false;
+
+                    loadQuestion();
+                })
+                .catch(error => {
+                    console.error(error);
+                    quiz.innerHTML = "Error loading quiz: " + error.message;
+                });
+        }
+
+        // ==========================LOAD QUESTION
+        function loadQuestion() {
+
+            answered = false;
+            submitBtn.disabled = false;
+
+            if (!quizData || quizData.length === 0) {
+                quiz.innerHTML = "No quiz data found!";
+                return;
+            }
+
+            if (currentQuestion >= quizData.length) {
+                showResult();
+                return;
+            }
+
+            const q = quizData[currentQuestion];
+
+            quiz.innerHTML = `
+                            <div class="quiz-header">
+                                <p class="q-text">${q.question}</p>
+                                <div class="q-count">
+                                    Question ${currentQuestion + 1} / ${quizData.length}
+                                </div>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" name="answer" value="a"> ${q.a}
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" name="answer" value="b"> ${q.b}
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" name="answer" value="c"> ${q.c}
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" name="answer" value="d"> ${q.d}
+                            </div>
+                        `;
+        }
+
+        // ==========================GET SELECTED ANSWER
+        function getSelected() {
+            const answers = document.getElementsByName('answer');
+            let selected = null;
+
+            answers.forEach(a => {
+                if (a.checked) selected = a.value;
+            });
+
+            return selected;
+        }
+
+        // ==========================HIGHLIGHT ANSWERS
+        function highlightAnswers(selected, correct) {
+            const inputs = quiz.querySelectorAll('input');
+            inputs.forEach(input => {
+                if (input.value === correct) {
+                    input.parentElement.style.color = "green";
+                    input.parentElement.style.fontWeight = "bold";
+                }
+
+                if (input.value === selected && selected !== correct) {
+                    input.parentElement.style.color = "red";
+                    input.parentElement.style.fontWeight = "bold";
+                }
+            });
+        }
+        // ========================== SHOW RESULT
+        function showResult() {
+            quiz.innerHTML = "";
+            submitBtn.style.display = "none";
+
+            resultDiv.innerHTML = `
+                    <h3>Your Score: ${score} / ${quizData.length}</h3>
+                `;
+
+            setTimeout(() => {
+                quizModal.hide();
+            }, 2000);
+        }
+
+        // ==========================SUBMIT BUTTON
+        submitBtn.addEventListener('click', () => {
+            if (answered) return;
+            if (!quizData || !quizData[currentQuestion]) {
+                console.error("Quiz data missing");
+                return;
+            }
+            const answer = getSelected();
+            if (!answer) {
+                alert("Please select an answer!");
+                return;
+            }
+            const correct = quizData[currentQuestion].correct;
+            highlightAnswers(answer, correct);
+            if (answer === correct) score++;
+            answered = true;
+            submitBtn.disabled = true;
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 1000);
+        });
+
+        const quizModal = new bootstrap.Modal(document.getElementById('quizModal'));
+
+        document.querySelectorAll('.quiz-box').forEach(card => {
+
+            card.addEventListener('click', function () {
+
+                document.querySelectorAll('.quiz-box')
+                    .forEach(c => c.classList.remove('active'));
+
+                this.classList.add('active');
+
+                const file = this.getAttribute('data-file');
+
+                console.log("Selected file:", file);
+
+                if (!file) {
+                    return;
+                }
+
+                quizModal.show();
+                loadQuiz(file);
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("startQuizBtn").addEventListener("click", function () {
+
+            let btn = this;
+
+            btn.classList.add("starting");
+            btn.innerText = "Starting... ⏳";
+
+            const rules = `
+1. Each question has only one correct answer.
+2. Time limits may apply to each question.
+3. You cannot go back once you move to the next question.
+4. Negative marking may apply for wrong answers.
+5. Cheating or external help is strictly prohibited.
+6. Do not refresh or close the browser during the quiz.
+7. Final score will be shown at the end.
+8. Ensure stable internet before starting.
+        `;
+
+            setTimeout(() => {
+
+                Swal.fire({
+                    title: "📌 Quiz Rules",
+                    html: `<div style="text-align:left; font-size:15px; line-height:1.6;">
+                        ${rules.replace(/\n/g, "<br>")}
+                       </div>`,
+                    width: "600px",
+                    confirmButtonText: "Okay"
+                });
+
+                btn.classList.remove("starting");
+                btn.innerText = "Rules 🚀";
+
+            }, 800);
+        });
+    </script>
+</body>
+</html>
