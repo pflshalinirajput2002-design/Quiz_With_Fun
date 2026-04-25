@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is JavaScript?",
+    "a": "A programming language",
+    "b": "A database",
+    "c": "A CSS framework",
+    "d": "An operating system",
+    "correct": "a"
+  },
+  {
+    "question": "Which company developed JavaScript?",
+    "a": "Microsoft",
+    "b": "Netscape",
+    "c": "Google",
+    "d": "Apple",
+    "correct": "b"
+  },
+  {
+    "question": "Which symbol is used for single-line comments in JavaScript?",
+    "a": "//",
+    "b": "/* */",
+    "c": "#",
+    "d": "--",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "a": "var",
+    "b": "int",
+    "c": "string",
+    "d": "define",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used for block-scoped variables?",
+    "a": "var",
+    "b": "let",
+    "c": "static",
+    "d": "global",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used for constant values?",
+    "a": "let",
+    "b": "const",
+    "c": "var",
+    "d": "final",
+    "correct": "b"
+  },
+  {
+    "question": "Which operator is used for strict equality?",
+    "a": "=",
+    "b": "==",
+    "c": "===",
+    "d": "!=",
+    "correct": "c"
+  },
+  {
+    "question": "Which function is used to print output in console?",
+    "a": "print()",
+    "b": "console.log()",
+    "c": "log()",
+    "d": "echo()",
+    "correct": "b"
+  },
+  {
+    "question": "Which method converts JSON to JavaScript object?",
+    "a": "JSON.parse()",
+    "b": "JSON.stringify()",
+    "c": "parseJSON()",
+    "d": "toObject()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method converts object to JSON string?",
+    "a": "JSON.parse()",
+    "b": "JSON.stringify()",
+    "c": "JSON.convert()",
+    "d": "toJSON()",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used for functions?",
+    "a": "function",
+    "b": "def",
+    "c": "func",
+    "d": "method",
+    "correct": "a"
+  },
+  {
+    "question": "Which symbol is used for arrays?",
+    "a": "{}",
+    "b": "()",
+    "c": "[]",
+    "d": "<>",
+    "correct": "c"
+  },
+  {
+    "question": "Which method adds an element to the end of an array?",
+    "a": "push()",
+    "b": "pop()",
+    "c": "shift()",
+    "d": "unshift()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method removes the last element of an array?",
+    "a": "pop()",
+    "b": "push()",
+    "c": "shift()",
+    "d": "slice()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method removes the first element of an array?",
+    "a": "shift()",
+    "b": "pop()",
+    "c": "push()",
+    "d": "slice()",
+    "correct": "a"
+  },
+  {
+    "question": "Which loop is used to iterate over arrays?",
+    "a": "for",
+    "b": "while",
+    "c": "do-while",
+    "d": "switch",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to find array length?",
+    "a": "size()",
+    "b": "length",
+    "c": "count()",
+    "d": "len()",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used for condition checking?",
+    "a": "if",
+    "b": "switch",
+    "c": "for",
+    "d": "case",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used for multiple conditions?",
+    "a": "if",
+    "b": "switch",
+    "c": "loop",
+    "d": "try",
+    "correct": "b"
+  },
+  {
+    "question": "Which method is used to find elements in array?",
+    "a": "find()",
+    "b": "search()",
+    "c": "get()",
+    "d": "index()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method filters array elements?",
+    "a": "filter()",
+    "b": "map()",
+    "c": "reduce()",
+    "d": "sort()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method transforms each array element?",
+    "a": "map()",
+    "b": "filter()",
+    "c": "reduce()",
+    "d": "sort()",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used for error handling?",
+    "a": "try-catch",
+    "b": "error",
+    "c": "handle",
+    "d": "exception",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used for timing delays?",
+    "a": "setTimeout()",
+    "b": "delay()",
+    "c": "wait()",
+    "d": "sleep()",
+    "correct": "a"
+  },
+  {
+    "question": "Which symbol is used for template literals?",
+    "a": "\" \"",
+    "b": "' '",
+    "c": "` `",
+    "d": "//",
+    "correct": "c"
+  }
+]

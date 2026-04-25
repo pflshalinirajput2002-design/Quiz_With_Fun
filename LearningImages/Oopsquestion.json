@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is OOP in C#?",
+    "a": "Object-Oriented Programming",
+    "b": "Online Operating Process",
+    "c": "Object Operating Protocol",
+    "d": "Over Object Process",
+    "correct": "a"
+  },
+  {
+    "question": "Which is NOT a pillar of OOP?",
+    "a": "Encapsulation",
+    "b": "Inheritance",
+    "c": "Compilation",
+    "d": "Polymorphism",
+    "correct": "c"
+  },
+  {
+    "question": "What is encapsulation?",
+    "a": "Binding data and methods together",
+    "b": "Creating multiple classes",
+    "c": "Deleting objects",
+    "d": "Running loops",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used for inheritance in C#?",
+    "a": "inherits",
+    "b": ":",
+    "c": "extends",
+    "d": "base",
+    "correct": "b"
+  },
+  {
+    "question": "What is polymorphism?",
+    "a": "One function many forms",
+    "b": "Deleting objects",
+    "c": "Creating variables",
+    "d": "Loop execution",
+    "correct": "a"
+  },
+  {
+    "question": "Which concept allows hiding implementation details?",
+    "a": "Abstraction",
+    "b": "Encapsulation",
+    "c": "Polymorphism",
+    "d": "Overloading",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used to create a class in C#?",
+    "a": "class",
+    "b": "object",
+    "c": "struct",
+    "d": "define",
+    "correct": "a"
+  },
+  {
+    "question": "What is an object?",
+    "a": "Instance of a class",
+    "b": "Blueprint of program",
+    "c": "Function",
+    "d": "Loop",
+    "correct": "a"
+  },
+  {
+    "question": "What is a class?",
+    "a": "Blueprint of objects",
+    "b": "Instance of object",
+    "c": "Variable",
+    "d": "Method",
+    "correct": "a"
+  },
+  {
+    "question": "Which feature allows same method name with different parameters?",
+    "a": "Overloading",
+    "b": "Overriding",
+    "c": "Inheritance",
+    "d": "Encapsulation",
+    "correct": "a"
+  },
+  {
+    "question": "Which feature allows redefining base class method?",
+    "a": "Overloading",
+    "b": "Overriding",
+    "c": "Encapsulation",
+    "d": "Abstraction",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used for method overriding?",
+    "a": "virtual",
+    "b": "static",
+    "c": "const",
+    "d": "new",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used in derived class to override method?",
+    "a": "override",
+    "b": "over",
+    "c": "base",
+    "d": "extend",
+    "correct": "a"
+  },
+  {
+    "question": "Which OOP concept focuses on data hiding?",
+    "a": "Encapsulation",
+    "b": "Polymorphism",
+    "c": "Inheritance",
+    "d": "Abstraction",
+    "correct": "a"
+  },
+  {
+    "question": "Which concept represents 'IS-A' relationship?",
+    "a": "Inheritance",
+    "b": "Encapsulation",
+    "c": "Abstraction",
+    "d": "Polymorphism",
+    "correct": "a"
+  },
+  {
+    "question": "Which concept represents 'HAS-A' relationship?",
+    "a": "Inheritance",
+    "b": "Composition",
+    "c": "Polymorphism",
+    "d": "Abstraction",
+    "correct": "b"
+  },
+  {
+    "question": "Which access modifier is most restrictive?",
+    "a": "public",
+    "b": "private",
+    "c": "protected",
+    "d": "internal",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used to call base class constructor?",
+    "a": "base",
+    "b": "this",
+    "c": "super",
+    "d": "parent",
+    "correct": "a"
+  },
+  {
+    "question": "Which concept allows defining common interface?",
+    "a": "Abstraction",
+    "b": "Encapsulation",
+    "c": "Inheritance",
+    "d": "Overloading",
+    "correct": "a"
+  },
+  {
+    "question": "Which is used to achieve abstraction in C#?",
+    "a": "abstract class",
+    "b": "static class",
+    "c": "sealed class",
+    "d": "partial class",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used to define interface?",
+    "a": "interface",
+    "b": "class",
+    "c": "struct",
+    "d": "object",
+    "correct": "a"
+  },
+  {
+    "question": "Can a class implement multiple interfaces in C#?",
+    "a": "Yes",
+    "b": "No",
+    "c": "Only one",
+    "d": "Never",
+    "correct": "a"
+  },
+  {
+    "question": "Which OOP concept increases code reusability?",
+    "a": "Inheritance",
+    "b": "Encapsulation",
+    "c": "Abstraction",
+    "d": "Polymorphism",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword prevents inheritance in C#?",
+    "a": "sealed",
+    "b": "static",
+    "c": "const",
+    "d": "final",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is automatically called when object is created?",
+    "a": "constructor",
+    "b": "destructor",
+    "c": "method",
+    "d": "function",
+    "correct": "a"
+  }
+]

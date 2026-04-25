@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is React JS?",
+    "a": "A JavaScript library for building UI",
+    "b": "A database system",
+    "c": "A backend framework",
+    "d": "A CSS framework",
+    "correct": "a"
+  },
+  {
+    "question": "Who developed React JS?",
+    "a": "Google",
+    "b": "Facebook (Meta)",
+    "c": "Microsoft",
+    "d": "Twitter",
+    "correct": "b"
+  },
+  {
+    "question": "What is used to create components in React?",
+    "a": "Functions or Classes",
+    "b": "Only HTML",
+    "c": "Only CSS",
+    "d": "Only JSON",
+    "correct": "a"
+  },
+  {
+    "question": "What is JSX?",
+    "a": "JavaScript XML",
+    "b": "Java Syntax Extension",
+    "c": "JavaScript Extra",
+    "d": "JSON XML",
+    "correct": "a"
+  },
+  {
+    "question": "Which hook is used for state in React?",
+    "a": "useEffect",
+    "b": "useState",
+    "c": "useContext",
+    "d": "useRef",
+    "correct": "b"
+  },
+  {
+    "question": "Which hook is used for side effects?",
+    "a": "useState",
+    "b": "useEffect",
+    "c": "useMemo",
+    "d": "useReducer",
+    "correct": "b"
+  },
+  {
+    "question": "Which method is used to render React components?",
+    "a": "ReactDOM.render()",
+    "b": "renderComponent()",
+    "c": "show()",
+    "d": "mount()",
+    "correct": "a"
+  },
+  {
+    "question": "React is mainly used for?",
+    "a": "Frontend development",
+    "b": "Backend development",
+    "c": "Database management",
+    "d": "Operating system",
+    "correct": "a"
+  },
+  {
+    "question": "What is a React component?",
+    "a": "Reusable UI building block",
+    "b": "Database table",
+    "c": "Server",
+    "d": "API",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used to pass data in React?",
+    "a": "props",
+    "b": "state",
+    "c": "data",
+    "d": "set",
+    "correct": "a"
+  },
+  {
+    "question": "What is state in React?",
+    "a": "Static data",
+    "b": "Dynamic data of component",
+    "c": "Database",
+    "d": "HTML element",
+    "correct": "b"
+  },
+  {
+    "question": "What is props in React?",
+    "a": "Internal data",
+    "b": "External data passed to component",
+    "c": "Database query",
+    "d": "CSS style",
+    "correct": "b"
+  },
+  {
+    "question": "Which method is used to update state in functional components?",
+    "a": "setState",
+    "b": "useState setter function",
+    "c": "updateState()",
+    "d": "changeState()",
+    "correct": "b"
+  },
+  {
+    "question": "Which file is entry point in React app?",
+    "a": "index.js",
+    "b": "app.js",
+    "c": "main.html",
+    "d": "root.css",
+    "correct": "a"
+  },
+  {
+    "question": "What is virtual DOM?",
+    "a": "Real browser DOM",
+    "b": "Copy of real DOM in memory",
+    "c": "Database structure",
+    "d": "Server side DOM",
+    "correct": "b"
+  },
+  {
+    "question": "React uses which programming style?",
+    "a": "Imperative",
+    "b": "Declarative",
+    "c": "Procedural",
+    "d": "Functional only",
+    "correct": "b"
+  },
+  {
+    "question": "Which company maintains React?",
+    "a": "Google",
+    "b": "Facebook (Meta)",
+    "c": "Amazon",
+    "d": "Microsoft",
+    "correct": "b"
+  },
+  {
+    "question": "What is useEffect used for?",
+    "a": "State management",
+    "b": "Side effects like API calls",
+    "c": "Routing",
+    "d": "Styling",
+    "correct": "b"
+  },
+  {
+    "question": "Which hook is used for performance optimization?",
+    "a": "useMemo",
+    "b": "useState",
+    "c": "useEffect",
+    "d": "useContext",
+    "correct": "a"
+  },
+  {
+    "question": "What is React Router used for?",
+    "a": "State management",
+    "b": "Routing between pages",
+    "c": "API calls",
+    "d": "Styling components",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used to export components?",
+    "a": "export",
+    "b": "import",
+    "c": "require",
+    "d": "module",
+    "correct": "a"
+  },
+  {
+    "question": "Which hook is used for referencing DOM elements?",
+    "a": "useRef",
+    "b": "useState",
+    "c": "useEffect",
+    "d": "useMemo",
+    "correct": "a"
+  },
+  {
+    "question": "What is lifting state up?",
+    "a": "Moving state to parent component",
+    "b": "Deleting state",
+    "c": "Storing state in database",
+    "d": "Copying state",
+    "correct": "a"
+  },
+  {
+    "question": "React components must return?",
+    "a": "HTML-like JSX",
+    "b": "Only CSS",
+    "c": "Database query",
+    "d": "Server response",
+    "correct": "a"
+  },
+  {
+    "question": "What is reconciliation in React?",
+    "a": "Updating DOM efficiently",
+    "b": "Deleting components",
+    "c": "Server syncing",
+    "d": "CSS rendering",
+    "correct": "a"
+  }
+]

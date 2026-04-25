@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is SQL?",
+    "a": "Structured Query Language",
+    "b": "Simple Query Language",
+    "c": "Standard Question Language",
+    "d": "System Query List",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL command is used to retrieve data?",
+    "a": "GET",
+    "b": "SELECT",
+    "c": "SHOW",
+    "d": "FETCH",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL command is used to insert data?",
+    "a": "ADD INTO",
+    "b": "INSERT INTO",
+    "c": "UPDATE INTO",
+    "d": "PUT INTO",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL command is used to update data?",
+    "a": "MODIFY",
+    "b": "UPDATE",
+    "c": "CHANGE",
+    "d": "ALTER",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL command is used to delete data?",
+    "a": "REMOVE",
+    "b": "DELETE",
+    "c": "DROP",
+    "d": "CLEAR",
+    "correct": "b"
+  },
+  {
+    "question": "Which clause is used to filter records?",
+    "a": "WHERE",
+    "b": "FILTER",
+    "c": "HAVING",
+    "d": "GROUP",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL keyword is used to sort results?",
+    "a": "ORDER BY",
+    "b": "SORT BY",
+    "c": "GROUP BY",
+    "d": "ARRANGE",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL clause is used to group records?",
+    "a": "GROUP BY",
+    "b": "ORDER BY",
+    "c": "GROUP",
+    "d": "COLLECT",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL clause is used with aggregate filters?",
+    "a": "WHERE",
+    "b": "HAVING",
+    "c": "FILTER",
+    "d": "GROUP",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL function returns number of rows?",
+    "a": "SUM()",
+    "b": "COUNT()",
+    "c": "TOTAL()",
+    "d": "ROWS()",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL function returns maximum value?",
+    "a": "MAX()",
+    "b": "TOP()",
+    "c": "HIGH()",
+    "d": "LARGE()",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL function returns minimum value?",
+    "a": "MIN()",
+    "b": "LOW()",
+    "c": "SMALL()",
+    "d": "BOTTOM()",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL function calculates total sum?",
+    "a": "SUM()",
+    "b": "ADD()",
+    "c": "TOTAL()",
+    "d": "PLUS()",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL constraint ensures unique values?",
+    "a": "PRIMARY KEY",
+    "b": "FOREIGN KEY",
+    "c": "UNIQUE",
+    "d": "CHECK",
+    "correct": "c"
+  },
+  {
+    "question": "Which constraint identifies a record uniquely?",
+    "a": "PRIMARY KEY",
+    "b": "FOREIGN KEY",
+    "c": "INDEX",
+    "d": "UNIQUE",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL command removes a table?",
+    "a": "DELETE TABLE",
+    "b": "DROP TABLE",
+    "c": "REMOVE TABLE",
+    "d": "CLEAR TABLE",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL command modifies table structure?",
+    "a": "UPDATE TABLE",
+    "b": "ALTER TABLE",
+    "c": "CHANGE TABLE",
+    "d": "EDIT TABLE",
+    "correct": "b"
+  },
+  {
+    "question": "Which join returns matching records from both tables?",
+    "a": "LEFT JOIN",
+    "b": "RIGHT JOIN",
+    "c": "INNER JOIN",
+    "d": "OUTER JOIN",
+    "correct": "c"
+  },
+  {
+    "question": "Which join returns all records from left table?",
+    "a": "RIGHT JOIN",
+    "b": "LEFT JOIN",
+    "c": "INNER JOIN",
+    "d": "FULL JOIN",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL keyword is used to create a database?",
+    "a": "MAKE DATABASE",
+    "b": "CREATE DATABASE",
+    "c": "NEW DATABASE",
+    "d": "ADD DATABASE",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL keyword is used to select database?",
+    "a": "USE",
+    "b": "SELECT DB",
+    "c": "OPEN",
+    "d": "CHOOSE",
+    "correct": "a"
+  },
+  {
+    "question": "Which SQL keyword removes all records but keeps table?",
+    "a": "DELETE",
+    "b": "DROP",
+    "c": "TRUNCATE",
+    "d": "CLEAR",
+    "correct": "c"
+  },
+  {
+    "question": "Which key connects two tables?",
+    "a": "PRIMARY KEY",
+    "b": "FOREIGN KEY",
+    "c": "INDEX",
+    "d": "UNIQUE KEY",
+    "correct": "b"
+  },
+  {
+    "question": "Which SQL clause limits number of rows?",
+    "a": "LIMIT",
+    "b": "TOP",
+    "c": "ROWNUM",
+    "d": "All of the above",
+    "correct": "d"
+  },
+  {
+    "question": "SQL is used for?",
+    "a": "Database management",
+    "b": "Web design",
+    "c": "Game development",
+    "d": "Graphic design",
+    "correct": "a"
+  }
+]

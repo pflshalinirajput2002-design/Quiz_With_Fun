@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is Bootstrap 5?",
+    "a": "A CSS framework",
+    "b": "A JavaScript library",
+    "c": "A database system",
+    "d": "A programming language",
+    "correct": "a"
+  },
+  {
+    "question": "Which company developed Bootstrap?",
+    "a": "Google",
+    "b": "Twitter",
+    "c": "Microsoft",
+    "d": "Facebook",
+    "correct": "b"
+  },
+  {
+    "question": "Which file is required to use Bootstrap 5?",
+    "a": "bootstrap.js only",
+    "b": "bootstrap.css only",
+    "c": "Both CSS and JS",
+    "d": "PHP file",
+    "correct": "c"
+  },
+  {
+    "question": "Which class is used for a responsive container in Bootstrap 5?",
+    "a": ".container",
+    "b": ".box",
+    "c": ".wrapper",
+    "d": ".layout",
+    "correct": "a"
+  },
+  {
+    "question": "Which class creates a full-width container?",
+    "a": ".container-fluid",
+    "b": ".container-full",
+    "c": ".fluid-container",
+    "d": ".wide-container",
+    "correct": "a"
+  },
+  {
+    "question": "Which class is used for a row in Bootstrap grid?",
+    "a": ".grid",
+    "b": ".row",
+    "c": ".column",
+    "d": ".flex",
+    "correct": "b"
+  },
+  {
+    "question": "How many columns are in Bootstrap grid system?",
+    "a": "10",
+    "b": "12",
+    "c": "16",
+    "d": "24",
+    "correct": "b"
+  },
+  {
+    "question": "Which class is used for columns in Bootstrap?",
+    "a": ".col",
+    "b": ".column",
+    "c": ".grid-col",
+    "d": ".box",
+    "correct": "a"
+  },
+  {
+    "question": "Which Bootstrap class is used for primary button?",
+    "a": ".btn-main",
+    "b": ".btn-primary",
+    "c": ".btn-blue",
+    "d": ".btn-first",
+    "correct": "b"
+  },
+  {
+    "question": "Which class is used to create a navigation bar?",
+    "a": ".navbar",
+    "b": ".nav-bar",
+    "c": ".menu",
+    "d": ".navigation",
+    "correct": "a"
+  },
+  {
+    "question": "Which class is used for Bootstrap cards?",
+    "a": ".card",
+    "b": ".box-card",
+    "c": ".panel",
+    "d": ".tile",
+    "correct": "a"
+  },
+  {
+    "question": "Which Bootstrap class is used for alerts?",
+    "a": ".notify",
+    "b": ".alert",
+    "c": ".message",
+    "d": ".warning-box",
+    "correct": "b"
+  },
+  {
+    "question": "Which class is used for spacing utilities in Bootstrap 5?",
+    "a": ".space",
+    "b": ".gap",
+    "c": ".m-*, .p-*",
+    "d": ".padding-only",
+    "correct": "c"
+  },
+  {
+    "question": "Which class is used for text alignment center?",
+    "a": ".text-center",
+    "b": ".center-text",
+    "c": ".align-center",
+    "d": ".text-mid",
+    "correct": "a"
+  },
+  {
+    "question": "Which class makes an image responsive in Bootstrap 5?",
+    "a": ".img-fluid",
+    "b": ".img-responsive",
+    "c": ".image-fit",
+    "d": ".img-flex",
+    "correct": "a"
+  },
+  {
+    "question": "Which class is used for Bootstrap modal?",
+    "a": ".popup",
+    "b": ".modal",
+    "c": ".dialog-box",
+    "d": ".window",
+    "correct": "b"
+  },
+  {
+    "question": "Which attribute is required to toggle a modal in Bootstrap 5?",
+    "a": "data-bs-toggle",
+    "b": "data-toggle",
+    "c": "bs-toggle",
+    "d": "toggle-bs",
+    "correct": "a"
+  },
+  {
+    "question": "Which class is used for Bootstrap dropdown?",
+    "a": ".dropdown",
+    "b": ".dropmenu",
+    "c": ".menu-drop",
+    "d": ".select-menu",
+    "correct": "a"
+  },
+  {
+    "question": "Which class is used for Bootstrap badges?",
+    "a": ".badge",
+    "b": ".label",
+    "c": ".tag",
+    "d": ".mark",
+    "correct": "a"
+  },
+  {
+    "question": "Which class is used for Bootstrap progress bar?",
+    "a": ".progress",
+    "b": ".bar",
+    "c": ".loading-bar",
+    "d": ".progressbar",
+    "correct": "a"
+  },
+  {
+    "question": "Which class is used for Bootstrap flexbox utilities?",
+    "a": ".flex",
+    "b": ".d-flex",
+    "c": ".display-flex",
+    "d": ".flexbox",
+    "correct": "b"
+  },
+  {
+    "question": "Which class is used to hide an element in Bootstrap 5?",
+    "a": ".hidden",
+    "b": ".d-none",
+    "c": ".hide",
+    "d": ".invisible",
+    "correct": "b"
+  },
+  {
+    "question": "Which class is used for Bootstrap tables?",
+    "a": ".table",
+    "b": ".grid-table",
+    "c": ".data-table",
+    "d": ".tbl",
+    "correct": "a"
+  },
+  {
+    "question": "Which class is used for rounded corners in Bootstrap?",
+    "a": ".rounded",
+    "b": ".circle",
+    "c": ".corner-round",
+    "d": ".radius",
+    "correct": "a"
+  },
+  {
+    "question": "Which version introduced Bootstrap 5?",
+    "a": "2020",
+    "b": "2015",
+    "c": "2018",
+    "d": "2022",
+    "correct": "a"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is jQuery?",
+    "a": "A JavaScript library",
+    "b": "A programming language",
+    "c": "A database",
+    "d": "A CSS framework",
+    "correct": "a"
+  },
+  {
+    "question": "Which symbol is used as jQuery shortcut?",
+    "a": "$",
+    "b": "#",
+    "c": "@",
+    "d": "&",
+    "correct": "a"
+  },
+  {
+    "question": "jQuery is built on which language?",
+    "a": "Python",
+    "b": "Java",
+    "c": "JavaScript",
+    "d": "C++",
+    "correct": "c"
+  },
+  {
+    "question": "Which function is used to select elements in jQuery?",
+    "a": "$()",
+    "b": "jQuerySelect()",
+    "c": "getElement()",
+    "d": "query()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to hide elements in jQuery?",
+    "a": "hide()",
+    "b": "remove()",
+    "c": "displayNone()",
+    "d": "invisible()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to show hidden elements in jQuery?",
+    "a": "show()",
+    "b": "display()",
+    "c": "visible()",
+    "d": "appear()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to toggle visibility in jQuery?",
+    "a": "switch()",
+    "b": "toggle()",
+    "c": "change()",
+    "d": "flip()",
+    "correct": "b"
+  },
+  {
+    "question": "Which event runs when document is ready?",
+    "a": "$(document).ready()",
+    "b": "$(window).load()",
+    "c": "init()",
+    "d": "start()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to add a class in jQuery?",
+    "a": "addClass()",
+    "b": "add()",
+    "c": "classAdd()",
+    "d": "addStyle()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to remove a class in jQuery?",
+    "a": "removeClass()",
+    "b": "deleteClass()",
+    "c": "classRemove()",
+    "d": "unsetClass()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to get HTML content?",
+    "a": "html()",
+    "b": "text()",
+    "c": "getHTML()",
+    "d": "innerHTML()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to get text content?",
+    "a": "text()",
+    "b": "html()",
+    "c": "content()",
+    "d": "getText()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to set CSS properties in jQuery?",
+    "a": "css()",
+    "b": "style()",
+    "c": "setCSS()",
+    "d": "design()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to append content?",
+    "a": "append()",
+    "b": "addTo()",
+    "c": "push()",
+    "d": "insert()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to remove elements?",
+    "a": "remove()",
+    "b": "delete()",
+    "c": "clear()",
+    "d": "empty()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to empty an element's content?",
+    "a": "empty()",
+    "b": "remove()",
+    "c": "clear()",
+    "d": "reset()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used for fade-in effect?",
+    "a": "fadeIn()",
+    "b": "showFade()",
+    "c": "appear()",
+    "d": "visibleFade()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used for fade-out effect?",
+    "a": "fadeOut()",
+    "b": "hideFade()",
+    "c": "disappear()",
+    "d": "vanish()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to slide elements down?",
+    "a": "slideDown()",
+    "b": "downSlide()",
+    "c": "showSlide()",
+    "d": "moveDown()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to slide elements up?",
+    "a": "slideUp()",
+    "b": "upSlide()",
+    "c": "hideSlide()",
+    "d": "moveUp()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to handle click events?",
+    "a": "click()",
+    "b": "onClick()",
+    "c": "triggerClick()",
+    "d": "eventClick()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to attach multiple events?",
+    "a": "on()",
+    "b": "bind()",
+    "c": "attach()",
+    "d": "listen()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to get attribute value?",
+    "a": "attr()",
+    "b": "getAttr()",
+    "c": "attribute()",
+    "d": "prop()",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is used to set attribute value?",
+    "a": "attr()",
+    "b": "setAttr()",
+    "c": "property()",
+    "d": "assignAttr()",
+    "correct": "a"
+  },
+  {
+    "question": "jQuery was released in which year?",
+    "a": "2005",
+    "b": "2006",
+    "c": "2007",
+    "d": "2008",
+    "correct": "b"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "a": "HyperText Markup Language",
+    "b": "HighText Machine Language",
+    "c": "HyperTool Multi Language",
+    "d": "Home Text Mark Language",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used to create a hyperlink?",
+    "a": "&lt;a&gt;",
+    "b": "&lt;link&gt;",
+    "c": "&lt;href&gt;",
+    "d": "&lt;hyper&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for the largest heading?",
+    "a": "&lt;h1&gt;",
+    "b": "&lt;h6&gt;",
+    "c": "&lt;head&gt;",
+    "d": "&lt;heading&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for line break?",
+    "a": "&lt;lb&gt;",
+    "b": "&lt;br&gt;",
+    "c": "&lt;break&gt;",
+    "d": "&lt;newline&gt;",
+    "correct": "b"
+  },
+  {
+    "question": "Which tag is used to display an image?",
+    "a": "&lt;img&gt;",
+    "b": "&lt;image&gt;",
+    "c": "&lt;pic&gt;",
+    "d": "&lt;src&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for unordered list?",
+    "a": "&lt;ul&gt;",
+    "b": "&lt;ol&gt;",
+    "c": "&lt;li&gt;",
+    "d": "&lt;list&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for ordered list?",
+    "a": "&lt;ol&gt;",
+    "b": "&lt;ul&gt;",
+    "c": "&lt;li&gt;",
+    "d": "&lt;list&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag defines a table?",
+    "a": "&lt;table&gt;",
+    "b": "&lt;tab&gt;",
+    "c": "&lt;tr&gt;",
+    "d": "&lt;td&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for paragraph?",
+    "a": "&lt;p&gt;",
+    "b": "&lt;para&gt;",
+    "c": "&lt;text&gt;",
+    "d": "&lt;paragraph&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "What is correct HTML comment syntax?",
+    "a": "&lt;!-- comment --&gt;",
+    "b": "// comment",
+    "c": "/* comment */",
+    "d": "** comment **",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for title of webpage?",
+    "a": "&lt;title&gt;",
+    "b": "&lt;head&gt;",
+    "c": "&lt;meta&gt;",
+    "d": "&lt;body&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag contains visible content?",
+    "a": "&lt;body&gt;",
+    "b": "&lt;head&gt;",
+    "c": "&lt;html&gt;",
+    "d": "&lt;title&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Root tag of HTML document?",
+    "a": "&lt;html&gt;",
+    "b": "&lt;head&gt;",
+    "c": "&lt;body&gt;",
+    "d": "&lt;title&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for horizontal line?",
+    "a": "&lt;hr&gt;",
+    "b": "&lt;br&gt;",
+    "c": "&lt;line&gt;",
+    "d": "&lt;rule&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for input field?",
+    "a": "&lt;input&gt;",
+    "b": "&lt;form&gt;",
+    "c": "&lt;text&gt;",
+    "d": "&lt;field&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Which tag is used for form?",
+    "a": "&lt;form&gt;",
+    "b": "&lt;input&gt;",
+    "c": "&lt;submit&gt;",
+    "d": "&lt;fieldset&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Dropdown list tag?",
+    "a": "&lt;select&gt;",
+    "b": "&lt;option&gt;",
+    "c": "&lt;dropdown&gt;",
+    "d": "&lt;list&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Options inside dropdown?",
+    "a": "&lt;option&gt;",
+    "b": "&lt;select&gt;",
+    "c": "&lt;list&gt;",
+    "d": "&lt;opt&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Bold text tag?",
+    "a": "&lt;b&gt;",
+    "b": "&lt;strong&gt;",
+    "c": "&lt;bold&gt;",
+    "d": "&lt;em&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Italic text tag?",
+    "a": "&lt;i&gt;",
+    "b": "&lt;em&gt;",
+    "c": "&lt;italic&gt;",
+    "d": "Both a and b",
+    "correct": "d"
+  },
+  {
+    "question": "Semantic HTML element?",
+    "a": "&lt;article&gt;",
+    "b": "&lt;div&gt;",
+    "c": "&lt;span&gt;",
+    "d": "&lt;b&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "External CSS link tag?",
+    "a": "&lt;link&gt;",
+    "b": "&lt;style&gt;",
+    "c": "&lt;script&gt;",
+    "d": "&lt;css&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Favicon is added using?",
+    "a": "&lt;link&gt;",
+    "b": "&lt;meta&gt;",
+    "c": "&lt;icon&gt;",
+    "d": "&lt;favicon&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Audio tag?",
+    "a": "&lt;audio&gt;",
+    "b": "&lt;sound&gt;",
+    "c": "&lt;music&gt;",
+    "d": "&lt;media&gt;",
+    "correct": "a"
+  },
+  {
+    "question": "Video tag?",
+    "a": "&lt;video&gt;",
+    "b": "&lt;movie&gt;",
+    "c": "&lt;media&gt;",
+    "d": "&lt;play&gt;",
+    "correct": "a"
+  }
+]

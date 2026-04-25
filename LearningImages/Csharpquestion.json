@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is C#?",
+    "a": "A programming language",
+    "b": "A database",
+    "c": "A browser",
+    "d": "An operating system",
+    "correct": "a"
+  },
+  {
+    "question": "Who developed C#?",
+    "a": "Apple",
+    "b": "Microsoft",
+    "c": "Google",
+    "d": "IBM",
+    "correct": "b"
+  },
+  {
+    "question": "Which framework is commonly used with C#?",
+    "a": ".NET",
+    "b": "Django",
+    "c": "Laravel",
+    "d": "React",
+    "correct": "a"
+  },
+  {
+    "question": "What is the correct file extension for C# files?",
+    "a": ".java",
+    "b": ".cs",
+    "c": ".csharp",
+    "d": ".cpp",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used to define a class in C#?",
+    "a": "class",
+    "b": "struct",
+    "c": "object",
+    "d": "define",
+    "correct": "a"
+  },
+  {
+    "question": "Which method is the entry point of a C# program?",
+    "a": "Start()",
+    "b": "Main()",
+    "c": "Run()",
+    "d": "Init()",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used to create an object in C#?",
+    "a": "make",
+    "b": "new",
+    "c": "create",
+    "d": "object",
+    "correct": "b"
+  },
+  {
+    "question": "Which data type is used to store text in C#?",
+    "a": "int",
+    "b": "float",
+    "c": "string",
+    "d": "bool",
+    "correct": "c"
+  },
+  {
+    "question": "Which keyword is used for inheritance in C#?",
+    "a": "inherits",
+    "b": "extends",
+    "c": ":",
+    "d": "base",
+    "correct": "c"
+  },
+  {
+    "question": "Which access modifier makes members accessible only within the same class?",
+    "a": "public",
+    "b": "private",
+    "c": "protected",
+    "d": "internal",
+    "correct": "b"
+  },
+  {
+    "question": "Which symbol is used for single-line comments in C#?",
+    "a": "//",
+    "b": "/* */",
+    "c": "#",
+    "d": "--",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used to prevent inheritance in C#?",
+    "a": "sealed",
+    "b": "final",
+    "c": "static",
+    "d": "const",
+    "correct": "a"
+  },
+  {
+    "question": "Which keyword is used for exception handling in C#?",
+    "a": "try-catch",
+    "b": "error-handle",
+    "c": "catch-throw",
+    "d": "exception-block",
+    "correct": "a"
+  },
+  {
+    "question": "Which type is used for boolean values in C#?",
+    "a": "int",
+    "b": "bool",
+    "c": "string",
+    "d": "char",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used to define a constant in C#?",
+    "a": "let",
+    "b": "const",
+    "c": "final",
+    "d": "fixed",
+    "correct": "b"
+  },
+  {
+    "question": "Which collection stores key-value pairs in C#?",
+    "a": "List",
+    "b": "Array",
+    "c": "Dictionary",
+    "d": "Queue",
+    "correct": "c"
+  },
+  {
+    "question": "Which keyword is used to inherit a class in C#?",
+    "a": "base",
+    "b": ":",
+    "c": "extends",
+    "d": "inherits",
+    "correct": "b"
+  },
+  {
+    "question": "Which operator is used for equality comparison in C#?",
+    "a": "=",
+    "b": "==",
+    "c": "===",
+    "d": "!=",
+    "correct": "b"
+  },
+  {
+    "question": "Which loop is guaranteed to execute at least once?",
+    "a": "for",
+    "b": "while",
+    "c": "do-while",
+    "d": "foreach",
+    "correct": "c"
+  },
+  {
+    "question": "Which keyword is used to define a namespace in C#?",
+    "a": "package",
+    "b": "namespace",
+    "c": "module",
+    "d": "using",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used to import namespaces in C#?",
+    "a": "include",
+    "b": "import",
+    "c": "using",
+    "d": "require",
+    "correct": "c"
+  },
+  {
+    "question": "Which type is used to store decimal numbers in C#?",
+    "a": "int",
+    "b": "float",
+    "c": "string",
+    "d": "char",
+    "correct": "b"
+  },
+  {
+    "question": "Which keyword is used to define a method in C#?",
+    "a": "func",
+    "b": "def",
+    "c": "return type + method name",
+    "d": "method",
+    "correct": "c"
+  },
+  {
+    "question": "Which keyword is used to stop loop execution in C#?",
+    "a": "exit",
+    "b": "stop",
+    "c": "break",
+    "d": "return",
+    "correct": "c"
+  },
+  {
+    "question": "Which platform is C# mainly used for?",
+    "a": "Web development",
+    "b": ".NET applications",
+    "c": "Game development with Unity",
+    "d": "All of the above",
+    "correct": "d"
+  }
+]
